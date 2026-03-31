@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safeguarding Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Safeguarding Portal</h1>
+
+<div class="box">
+    <h2>Report a Concern</h2>
+
+    <input id="name" placeholder="Your name (optional)">
+    <textarea id="concern" placeholder="Describe concern..."></textarea>
+
+    <select id="severity">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+
+    <button onclick="submitReport()">Submit</button>
+    <p id="status"></p>
+</div>
+
+<hr>
+
+<div class="box">
+    <h2>Staff Dashboard</h2>
+    <button onclick="loadReports()">Load Reports</button>
+    <ul id="reports"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
